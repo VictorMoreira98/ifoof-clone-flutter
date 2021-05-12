@@ -6,6 +6,10 @@ class AppTypography {
     return Theme.of(context).textTheme.bodyText1;
   }
 
+  static TextStyle small(BuildContext context) {
+    return Theme.of(context).textTheme.bodyText1.copyWith(fontSize: 12);
+  }
+
   static TextStyle bodyTextBold(BuildContext context) {
     return Theme.of(context)
         .textTheme
@@ -18,6 +22,13 @@ class AppTypography {
         color: AppColors.primaryColor,
         fontWeight: FontWeight.w700,
         fontSize: 13);
+  }
+
+  static TextStyle filterItemStyle(BuildContext context) {
+    return Theme.of(context).textTheme.bodyText1.copyWith(
+        color: AppColors.primaryColor,
+        fontWeight: FontWeight.normal,
+        fontSize: 14);
   }
 
   static TextStyle localTextsStyle(BuildContext context) {
